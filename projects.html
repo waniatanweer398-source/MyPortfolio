@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Projects | Wania Tanveer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+:root{
+--bg:#0B1120;
+--card:#111827;
+--accent:#38BDF8;
+--text:#F8FAFC;
+--text-light:#94A3B8;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+}
+
+a{
+text-decoration:none;
+}
+
+.navbar{
+
+position:sticky;
+top:0;
+
+padding:20px 10%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(11,17,32,.9);
+
+backdrop-filter:blur(15px);
+
+z-index:1000;
+}
+
+.logo{
+font-size:1.8rem;
+font-weight:700;
+}
+
+.logo span{
+color:var(--accent);
+}
+
+.back-btn{
+
+padding:12px 24px;
+
+background:var(--accent);
+
+color:black;
+
+border-radius:10px;
+
+font-weight:600;
+}
+
+.hero{
+
+padding:120px 10% 70px;
+
+text-align:center;
+}
+
+.hero h1{
+
+font-size:3.5rem;
+
+color:var(--accent);
+
+margin-bottom:15px;
+}
+
+.hero p{
+
+max-width:700px;
+
+margin:auto;
+
+color:var(--text-light);
+}
+
+.projects{
+
+padding:40px 10% 100px;
+}
+
+.projects-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(340px,1fr));
+
+gap:30px;
+}
+
+.project-card{
+
+background:var(--card);
+
+border-radius:20px;
+
+overflow:hidden;
+
+transition:.35s;
+
+border:1px solid rgba(255,255,255,.05);
+}
+
+.project-card:hover{
+
+transform:translateY(-8px);
+
+border-color:rgba(56,189,248,.2);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.3);
+}
+
+.project-card img{
+
+width:100%;
+height:220px;
+
+object-fit:cover;
+}
+
+.project-content{
+
+padding:25px;
+}
+
+.project-content h3{
+
+margin-bottom:12px;
+}
+
+.project-content p{
+
+color:var(--text-light);
+
+margin-bottom:20px;
+}
+
+.tech-stack{
+
+display:flex;
+flex-wrap:wrap;
+
+gap:10px;
+
+margin-bottom:20px;
+}
+
+.tech{
+
+padding:6px 12px;
+
+background:rgba(56,189,248,.12);
+
+border-radius:20px;
+
+font-size:.85rem;
+
+color:var(--accent);
+}
+
+.project-buttons{
+
+display:flex;
+gap:15px;
+}
+
+.demo-btn,
+.github-btn{
+
+padding:10px 18px;
+
+border-radius:10px;
+
+font-size:.9rem;
+
+font-weight:600;
+}
+
+.demo-btn{
+
+background:var(--accent);
+
+color:black;
+}
+
+.github-btn{
+
+border:1px solid var(--accent);
+
+color:var(--accent);
+}
+
+footer{
+
+padding:30px;
+
+text-align:center;
+
+background:#060b16;
+
+color:var(--text-light);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.4rem;
+}
+
+.project-buttons{
+flex-direction:column;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+Wania<span>.</span>
+</div>
+
+<a href="index.html" class="back-btn">
+← Home
+</a>
+
+</nav>
+
+<section class="hero">
+
+<h1>My Projects</h1>
+
+<p>
+A collection of websites and frontend projects
+that showcase my skills in responsive design,
+modern UI development and user experience.
+</p>
+
+</section>
+
+<section class="projects">
+
+<div class="projects-grid">
+
+<!-- PROJECT 1 -->
+
+<div class="project-card">
+
+<img src="images/WeCook.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Cooking Game</h3>
+
+<p>
+A multiplayer Cooking game with ifinite levels.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+<span class="tech">JavaScript</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/WeCook/" class="demo-btn">
+Live Demo
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PROJECT 2 -->
+
+<div class="project-card">
+
+<img src="images/calendar.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Calendar</h3>
+
+<p>
+A digital calendar showcasing date management and UI design.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+<span class="tech">JavaScript</span>
+
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Calendar/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PROJECT 3 -->
+
+<div class="project-card">
+
+<img src="images/Currency Converter.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Currency Converter</h3>
+
+<p>
+A web app that converts currencies using live exchange rate data.</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+<span class="tech">JavaScript</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Currency-Converter/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PROJECT 4 -->
+
+<div class="project-card">
+
+<img src="images/Playfy.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Playfy</h3>
+
+<p>
+A Spotify-like Web app with multiple themes.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+<span class="tech">JavaScript</span>
+
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Playfy/" class="demo-btn">
+Live Demo
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 5 -->
+
+<div class="project-card">
+
+<img src="images/Scientific Calculator.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Scientific Calculator</h3>
+
+<p>
+A Calculator supporting basic and advanced mathematical operations with a clean and responsive user interface.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+<span class="tech">JavaScript</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Scientific-Calculator/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 6 -->
+
+<div class="project-card">
+
+<img src="images/Analog Clock.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Analog Clock</h3>
+
+<p>
+A functional analog clock featuring smooth, real-time updates.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+<span class="tech">JavaScript</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Analog-Clock/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 7 -->
+
+<div class="project-card">
+
+<img src="images/Snake Game.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Snake Game</h3>
+
+<p>
+A fun and interactive Snake Game where players control a growing snake, collect food, and try to achieve the highest score while avoiding obstacles.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+<span class="tech">JavaScript</span>
+
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Snake-Game/" class="demo-btn">
+Live Demo
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 8 -->
+
+<div class="project-card">
+
+<img src="images/Tic-Tac-Toe.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Tic-Tac-Toe</h3>
+
+<p>
+A Multiplayer Tic-Tac-Toe game to play with your friends.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+<span class="tech">JavaScript</span>
+
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Tic-Tac-Toe/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PROJECT 9 -->
+
+<div class="project-card">
+
+<img src="images/Rock-Paper-Scissor.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Rock-Paper-Scissor</h3>
+
+<p>
+An interactive Rock, Paper, Scissors game against the computer.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+<span class="tech">JavaScript</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Rock-Paper-Scissor/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PROJECT 10 -->
+
+<div class="project-card">
+
+<img src="images/Car Racing.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Car Racing Game</h3>
+
+<p>
+A browser-based car racing game with dynamic gameplay.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+<span class="tech">JavaScript</span>
+
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Car-Racing/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PROJECT 11-->
+
+<div class="project-card">
+
+<img src="images/Netflix.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Netflix Clone</h3>
+
+<p>
+An interactive Rock, Paper, Scissors game against the computer.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Netflix/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 12 -->
+
+<div class="project-card">
+
+<img src="images/Amazon.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Amazon</h3>
+
+<p>
+A responsive Amazon clone showcasing e-commerce functionality.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Amazon/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 13 -->
+
+<div class="project-card">
+
+<img src="images/Gaming Arena.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Gaming Arena</h3>
+
+<p>
+A high-energy landing page designed for gamers and tournaments.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Gaming-Arena/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 14 -->
+
+<div class="project-card">
+
+<img src="images/Home Design.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Home Decor</h3>
+
+<p>
+A minimalist home décor landing page focused on aesthetics and usability
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Home-Decor/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 15 -->
+
+<div class="project-card">
+
+<img src="images/Google.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Google</h3>
+
+<p>
+A modern Google clone replicating the iconic search interface.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Google/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PROJECT 16 -->
+
+<div class="project-card">
+
+<img src="images/Red Login Page.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Login Page</h3>
+
+<p>
+A modern and responsive login page with a clean UI.</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Red-Login-Page/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PROJECT 17 -->
+
+<div class="project-card">
+
+<img src="images/Login Page.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Login Page</h3>
+
+<p>
+A stylish login page showcasing responsive and accessible design.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Login-Page/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 18 -->
+
+<div class="project-card">
+
+<img src="images/Tourist Web.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Tourist Web</h3>
+
+<p>
+A visually appealing tourist website with destination highlights.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Tourist-Web/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PROJECT 19 -->
+
+<div class="project-card">
+
+<img src="images/Instagram.jpg" alt="Project">
+
+<div class="project-content">
+
+<h3>Tourist Web</h3>
+
+<p>
+Instagram logIn page clone.
+</p>
+
+<div class="tech-stack">
+
+<span class="tech">HTML</span>
+<span class="tech">CSS</span>
+
+
+</div>
+
+<div class="project-buttons">
+
+<a href="https://waniatanweer398-source.github.io/Instagram/" class="demo-btn">
+Live Demo
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Wania Tanveer | Frontend Developer
+
+</footer>
+
+</body>
+
+</html>
